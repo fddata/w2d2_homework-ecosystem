@@ -7,12 +7,13 @@
 # **A river could have a fish_count method
 
 class River
-  attr_reader :fish_in_river
+  attr_reader :fish_in_river, :river_name
 
   def initialize(river_name)
     @river_name = river_name
     @fish_in_river = []
-    #should I add fish here?  I followed the 'library' lab example and added them in the river_spec test setup
+    #we can also initialize the array with fish in it (question doesn't specify which method to use):
+    #initialize(river_name, fish_array)
   end
 
 

@@ -4,7 +4,7 @@
 #
 # *A bear should be able to take a fish from the river
 #
-#* A river should lose a fish when a bear takes a fish
+# *A river should lose a fish when a bear takes a fish
 #
 # *A bear could have a roar method
 #
@@ -24,6 +24,8 @@ class Bear
   def bear_eats_fish(river_name)
     eaten_fish = river_name.remove_fish()
     @bear_stomach.push(eaten_fish)
+    #A one liner (usually prefer two lines for more readability):
+    # @bear_stomach(river_name.remove_fish)
   end
 
   def roar
